@@ -9,6 +9,8 @@ import { AuthLoginComponent } from './auth-login/auth-login.component';
 import { AuthSignupComponent } from './auth-signup/auth-signup.component';
 import { MyPrivatePageComponent } from './my-private-page/my-private-page.component';
 
+import { RouterModule, Routes } from '@angular/router'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,8 @@ import { MyPrivatePageComponent } from './my-private-page/my-private-page.compon
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [SessionService],
   bootstrap: [AppComponent]
