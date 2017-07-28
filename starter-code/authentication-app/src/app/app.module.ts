@@ -11,6 +11,13 @@ import { MyPrivatePageComponent } from './my-private-page/my-private-page.compon
 
 import { RouterModule, Routes } from '@angular/router'
 
+const routes: Routes = [
+  { path: 'signup', component: AuthLoginComponent },
+  { path: 'login', component: AuthLoginComponent },
+  { path: 'private', component: AuthLoginComponent },
+
+]
+
 @NgModule({
   declarations: [
     AppComponent,
